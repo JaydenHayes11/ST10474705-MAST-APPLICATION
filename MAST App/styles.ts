@@ -1,0 +1,190 @@
+import { StyleSheet } from 'react-native';
+
+const s = StyleSheet.create({
+  container: {
+    padding: 16,
+    backgroundColor: '#f1f2f3',
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: '800',
+    marginBottom: 12,
+    color: '#222',
+    alignItems: 'center',
+  },
+  subTitle: {
+    fontSize: 16,
+    fontWeight: '700',
+    marginBottom: 10,
+    color: '#222',
+  },
+  pill: {
+    backgroundColor: '#e5e7eb',
+    paddingVertical: 8,
+    paddingHorizontal: 12,
+    borderRadius: 12,
+    alignSelf: 'flex-start',
+    marginBottom: 12,
+  },
+  pillText: {
+    color: '#333',
+    fontWeight: '600',
+  },
+  card: {
+    backgroundColor: '#fff',
+    borderRadius: 14,
+    padding: 14,
+    marginBottom: 14,
+    shadowColor: '#000',
+    shadowOpacity: 0.06,
+    shadowRadius: 10,
+    elevation: 2,
+  },
+  paragraph: {
+    color: '#303037',
+    lineHeight: 20,
+  },
+  primaryBtn: {
+    backgroundColor: '#e53935',
+    borderRadius: 22,
+    paddingVertical: 12,
+    paddingHorizontal: 16,
+    alignItems: 'center',
+    marginTop: 8,
+  },
+  primaryBtnText: {
+    color: '#fff',
+    fontWeight: '800',
+  },
+
+  // Menu
+  sectionTitle: {
+    fontSize: 18,
+    fontWeight: '800',
+    marginBottom: 8,
+    color: '#222',
+  },
+  menuRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#fff',
+    borderRadius: 12,
+    padding: 10,
+  },
+  thumb: {
+    width: 56,
+    height: 56,
+    borderRadius: 8,
+    backgroundColor: '#d1d5db',
+    marginRight: 10,
+  },
+  itemName: { fontSize: 14, fontWeight: '700', color: '#222' },
+  itemDesc: { fontSize: 12, color: '#666', marginTop: 2 },
+  pricePill: {
+    backgroundColor: '#ef5350',
+    borderRadius: 10,
+    paddingVertical: 4,
+    paddingHorizontal: 8,
+    marginLeft: 8,
+  },
+  pricePillText: { color: 'white', fontWeight: '800' },
+  avgPrice: { marginTop: 6, color: '#444', fontWeight: '600' },
+  rowBetween: {
+    marginTop: 8,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  circleBtn: {
+    width: 42,
+    height: 42,
+    borderRadius: 21,
+    backgroundColor: '#e5e7eb',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  circleBtnText: { fontSize: 18, fontWeight: '900', color: '#333' },
+
+  // Filter
+  toggleRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 12,
+  },
+  check: {
+    width: 28,
+    height: 28,
+    borderRadius: 14,
+    borderWidth: 2,
+    borderColor: '#e53935',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginRight: 12,
+    backgroundColor: '#fff',
+  },
+  checkOn: { backgroundColor: '#e53935' },
+  checkOnText: { color: '#fff', fontWeight: '900' },
+  togglePill: {
+    backgroundColor: '#e5e7eb',
+    borderRadius: 12,
+    paddingVertical: 10,
+    paddingHorizontal: 12,
+    flex: 1,
+  },
+  toggleLabel: { fontWeight: '700', color: '#222' },
+
+  // Manage
+  input: {
+    backgroundColor: '#f5f5f5',
+    borderRadius: 10,
+    padding: 10,
+    marginBottom: 10,
+    color: '#222',
+  },
+  label: { fontWeight: '700', color: '#222', marginBottom: 6 },
+  radioRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 8,
+  },
+  radioOuter: {
+    width: 22,
+    height: 22,
+    borderRadius: 11,
+    borderWidth: 2,
+    borderColor: '#222',
+    marginRight: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  radioOuterOn: { borderColor: '#e53935' },
+  radioInner: {
+    width: 10,
+    height: 10,
+    borderRadius: 5,
+    backgroundColor: '#e53935',
+  },
+  radioLabel: { color: '#222' },
+  muted: { color: '#666' },
+  removeRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#f5f5f5',
+    borderRadius: 10,
+    padding: 8,
+    marginTop: 8,
+  },
+  removeName: { flex: 1, color: '#222', fontWeight: '600' },
+  removeBtn: {
+    width: 36,
+    height: 36,
+    borderRadius: 8,
+    backgroundColor: '#ef5350',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginLeft: 8,
+  },
+  removeBtnText: { color: '#fff', fontWeight: '900' },
+});
+
+
+export default s;
