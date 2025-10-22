@@ -32,8 +32,8 @@ Date: October 2025
 <img src="MAST App/Screenshots/ManagePage.png">
 
 ### Links
-GitHub Repository - <https://github.com/JaydenHayes11/ST10474705-MAST-APPLICATION.git>
-Youtube Video - <https://youtu.be/OsZTG8iuQ14>
+# GitHub Repository - <https://github.com/JaydenHayes11/ST10474705-MAST-APPLICATION.git>
+# Youtube Video - <https://youtu.be/OsZTG8iuQ14>
 
 ### Referencing
 React Navigation, 2018.
