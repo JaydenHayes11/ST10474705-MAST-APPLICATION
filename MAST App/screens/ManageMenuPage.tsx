@@ -128,6 +128,33 @@ export default function ManageScreen() {
           <Text style={s.primaryBtnText}>Add Menu Item</Text>
         </Pressable>
       </View>
+
+      <View style={s.card}>
+        <Text style={s.subTitle}>Remove Menu Item</Text>
+
+        {(['Appetizers','Main Course','Desserts','Beverages'] as Course[]).map((c) => (
+          <View key={c} style={{ marginTop: 10 }}>
+            <Text style={s.sectionTitle}>{c}</Text>
+            {grouped[c].length === 0 ? (
+              <Text style={s.muted}>No items</Text>
+            ) : (
+              grouped[c].map((i) => (
+                <View key={i.id} style={s.removeRow}>
+                  <Text numberOfLines={1} style={s.removeName}>
+                    {i.name}
+                  </Text>
+                  <Pressable
+                    style={s.removeBtn}
+                    onPress={() => removeItem(i.id)}
+                  >
+                    <Text style={s.removeBtnText}>✕</Text>
+                  </Pressable>
+                </View>
+              ))
+            )}
+          </View>
+        ))}
+      </View>
     </ScrollView>
   );
 }
