@@ -21,19 +21,23 @@ function CourseRadio({
   current,
   onChange,
 }: {
+
   value: Course;
   current: Course;
   onChange: (v: Course) => void;
 }) {
   const selected = value === current;
   return (
-    <Pressable style={s.radioRow} onPress={() => onChange(value)}>
+
+    <Pressable style={s.radioRow} onPress={() =>  onChange(value)}>
+
       <View style={[s.radioOuter, selected && s.radioOuterOn]}>
         {selected ? <View style={s.radioInner} /> : null}
       </View>
-      <Text style={s.radioLabel}>{value}</Text>
+      <Text style={s.radioLabel}> {value}</Text>
     </Pressable>
   );
+
 }
 
 export default function ManageScreen() {
@@ -49,14 +53,18 @@ export default function ManageScreen() {
       'Main Course': items.filter((i) => i.course === 'Main Course'),
       Desserts: items.filter((i) => i.course === 'Desserts'),
       Beverages: items.filter((i) => i.course === 'Beverages'),
+
     };
+
   }, [items]);
 
   const onAdd = () => {
     const p = parseFloat(price);
+
     if (!name.trim() || isNaN(p)) {
       Alert.alert('Please enter a dish name and valid price.');
       return;
+
     }
     const payload: MenuItem = {
       id: nanoid(),
@@ -64,12 +72,14 @@ export default function ManageScreen() {
       description: desc.trim(),
       price: Math.max(0, Math.round(p * 100) / 100),
       course,
+
     };
     addItem(payload);
     setName('');
     setPrice('0');
     setDesc('');
     setCourse('Appetizers');
+    
   };
 
   return (

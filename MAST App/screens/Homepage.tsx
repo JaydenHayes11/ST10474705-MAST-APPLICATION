@@ -11,6 +11,7 @@ export default function HomeScreen() {
     <ScrollView contentContainerStyle={s.container}>
       <Text style={s.title}>Christoffel Culinary</Text>
 
+
       <View style={s.pill}>
         <Text style={s.pillText}>Welcome To Christoffel’s Culinary</Text>
       </View>
@@ -20,10 +21,13 @@ export default function HomeScreen() {
           An enthusiastic private chef with years of experience in fine dining and a dedication to creating unique culinary experiences is the creator of Christoffel’s Culinary. Chef Christoffel founded the business, which specializes in creating custom menu items that combine traditional methods with strong, modern flavors.
         </Text>
       </View>
+ 
 
       <Pressable style={s.primaryBtn} onPress={() => nav.navigate('Menu')}>
         <Text style={s.primaryBtnText}>Continue to Menu</Text>
+        
       </Pressable>
+
     </ScrollView>
   );
 }
