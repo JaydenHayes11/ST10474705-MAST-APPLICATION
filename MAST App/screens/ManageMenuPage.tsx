@@ -43,7 +43,7 @@ function CourseRadio({
 export default function ManageScreen() {
   const { items, addItem, removeItem } = useMenu();
   const [name, setName] = useState('');
-  const [price, setPrice] = useState<string>('0');
+  const [price, setPrice] = useState<string>('');
   const [desc, setDesc] = useState('');
   const [course, setCourse] = useState<Course>('Appetizers');
 

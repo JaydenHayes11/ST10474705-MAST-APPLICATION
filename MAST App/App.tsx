@@ -29,6 +29,7 @@ function MainTabs() {
         tabBarLabelStyle: { fontSize: 12 },
       }}
     >
+      {/*Items linking each page to their own page*/}
       <Tab.Screen
         name="Home"
         component={HomePage}
@@ -60,7 +61,7 @@ function MainTabs() {
     </Tab.Navigator>
   );
 }
-
+{/*Exporting bottom tab to all pages */}
 export default function App() {
   return (
     <MenuProvider>
