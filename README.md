@@ -50,7 +50,7 @@ Date: Novemeber 2025
 
 ### Links
 #### GitHub Repository - <https://github.com/VCCT-MAST5112-2025-G1/ST10474705-MAST-APPLICATION.git>
-#### Youtube Video - <https://youtu.be/OsZTG8iuQ14>
+#### Youtube Video - <https://youtu.be/n2fgnyvdSLs>
 
 ### Referencing
 React Navigation, 2018.
