@@ -14,7 +14,7 @@ import { nanoid } from 'nanoid/non-secure';
 
 
 
-const courseOptions: Course[] = ['Appetizers', 'Main Course', 'Desserts'];
+const courseOptions: Course[] = ['Appetizers', 'Main Course', 'Desserts', 'Beverages'];
 
 function CourseRadio({
   value,
