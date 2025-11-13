@@ -22,6 +22,12 @@ function Section({
 
   const count = useMemo(() => data.length, [data]);
 
+  const avgPrice = useMemo(() => {
+    if (data.length === 0) return 0;
+    const total = data.reduce((sum, item) => sum + item.price, 0);
+    return total / data.length;
+  }, [data]);
+
   return (
     <View style={{ marginBottom: 20 }}>
       <Text style={s.sectionTitle}>{title}</Text>
@@ -45,7 +51,9 @@ function Section({
         scrollEnabled={false}
       />
 
-      <Text style={s.avgPrice}>Total Items: {count}</Text>
+      <Text style={s.avgPrice}>
+        Total Items: {count} • Avg Price: R{avgPrice.toFixed(2)}
+      </Text>
     </View>
   );
 }
